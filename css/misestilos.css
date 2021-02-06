@@ -1,0 +1,188 @@
+.icon-facebook:before {
+	content: "\ea91";
+  }  
+.icon-twitter:before {
+	content: "\ea96";
+}  
+.icon-github:before {
+	content: "\eab0";
+}
+.icon-instagram:before {
+	content: "\ea92";
+}
+
+.icon-facebook, .icon-twitter, .icon-github, .icon-instagram {
+	color: white;
+    font-size: 50px;
+}
+
+.menu ol li{
+	display: flex;
+	justify-content: center;
+}
+
+.menu ol li a:hover{
+	color:  #056fff;
+}
+
+a.border {
+	padding: 5px 30px;
+	border: 1px solid white;
+	height: unset;
+	border-radius: 5px;
+	margin: auto 0;
+}
+a.border:hover {
+	border-color: #056fff;
+}
+
+.portfolio, .events, .contact {
+	padding: 0 20px;
+	background-color: white;
+}
+
+.portfolio .container {
+	background: #fafafa;
+}
+
+.portfolio .container, .events .container, .contact .container {
+	padding-top: 20px;
+	border-left: 20px solid #056fff;	
+	padding: 20px 40px 0px 20px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.contact .container {
+	background: #056fff;
+	padding-bottom: 20px;
+	border: unset;
+}
+
+.portfolio .container h2 {
+	margin-top: 0;
+}
+
+.project { 
+	border: 1px solid transparent;
+	box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.1);
+}
+
+.contact {
+	height: auto;
+}
+.form-email {
+	margin-left: 60px;
+  }
+.form-email input {
+	width: auto;
+}
+.form-email button {
+	border: 1px solid white;
+  }
+
+.form-email h3 {
+	color: white;
+	margin: 0;
+	margin-bottom: 10px;
+  }
+.semi-rounded, .semi-rounded-large {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	position: relative;
+	margin-bottom: 40px;
+}
+.semi-rounded h2, .semi-rounded-large h2 {
+	margin: 0;
+	margin-left: 20px;
+}
+  
+.semi-rounded-large h2  {
+	margin: 0;
+	margin-left: 55px;
+}
+  
+.semi-rounded::before {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-color: #056fff;
+	border-width: 19px 25px;
+	border-radius: 0 45% 45% 0;
+	margin-left: -45px;
+}
+  
+.semi-rounded-large::before {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-color: #056fff;
+	border-width: 20px 25px;
+	border-radius: 0 45% 45% 0;
+	margin-left: -20px;
+}
+
+.semi-rectangle {
+	position: relative;
+  }
+
+.semi-rectangle::before {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-color: white;
+	border-width: 30px 10px;
+	top: 0;
+	left: 0;
+  }
+  
+.contact .semi-rounded-large {
+	overflow: visible;
+	margin-bottom: 10px;
+  }
+.contact .semi-rounded-large h3 {
+	margin: 0;
+  }
+.contact .semi-rounded-large:before {
+	border-color:white;
+	left: -60px;
+  }
+
+@media screen and (max-width: 480px) {
+	.portfolio{
+		background: #fafafa;
+	}
+	.portfolio .container, .events .container, .contact .container {
+		padding: 20px 1em 0;
+		box-sizing: border-box;
+		border-left: unset;
+	}	
+	.contact {
+		padding: 0;
+	}
+	.form-email {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 10px;
+	}
+	.social {
+		padding: 15px 0;
+	}
+	.icon-facebook, .icon-twitter, .icon-github, .icon-instagram {
+		font-size: 40px;
+	}
+	.semi-rounded h2, .semi-rounded-large h2, .contact h3 {
+		margin: initial;
+	}	
+	.semi-rounded::before, .semi-rounded-large::before {
+		border: unset;
+	}
+
+	.semi-rectangle::before {
+		border: unset;
+	}
+}
